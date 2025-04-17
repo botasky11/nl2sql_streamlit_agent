@@ -1,0 +1,7 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.preferredDarkColorTheme": "Default High Contrast",
+    "files.autoSave": "onFocusChange",
+    "python.analysis.typeCheckingMode": "off"
+}

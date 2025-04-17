@@ -1,0 +1,4 @@
+db_url: "postgresql+psycopg2://test:test123@localhost:5432/academic"
+max_tokens: 2000
+temperature: 0.2
+model_path: "defog/sqlcoder-7b-2"
