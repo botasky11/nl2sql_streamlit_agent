@@ -1,4 +1,5 @@
-db_url: "postgresql+psycopg2://test:test123@localhost:5432/academic"
+# db_url: "postgresql+psycopg2://test:test123@localhost:5432/academic"
+db_url: "sqlite:///test_database/flight_2/flight_2.sqlite"
 max_tokens: 2000
 temperature: 0.2
 model_path: "defog/sqlcoder-7b-2"

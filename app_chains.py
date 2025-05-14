@@ -4,7 +4,7 @@ from agent.agent_chains import graph
 from utils.schema_utils import extract_schema
 from utils.prompt import prompt, build_prompt
 from langchain_core.runnables import RunnableConfig
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage,ToolMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 
 
 # Streamlit UI
@@ -17,9 +17,9 @@ if "sql_generated" not in st.session_state:
     st.session_state.sql_generated = False
 if st.button("生成 SQL"):
     with st.spinner("正在生成 SQL..."):
-        img_bytes = graph.get_graph().draw_mermaid_png()
+        # img_bytes = graph.get_graph().draw_mermaid_png()
         config = {"configurable": {"thread_id": "1"}}
-        st.image(img_bytes)
+        # st.image(img_bytes)
         for step in graph.stream({"question": user_input}, config=config, stream_mode="updates"):
             print(step)
             st.text(step)
